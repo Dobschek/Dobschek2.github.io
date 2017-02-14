@@ -1,0 +1,1468 @@
+/*! normalize.css v1.0.0 | MIT License | git.io/normalize */
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Montserrat:400,700);
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+main {
+  min-width: 320px;
+  max-width: 800px;
+  padding: 400px 50px 50px 50px; 
+  margin: 0 auto;
+
+
+}
+
+section {
+  display: none;
+  padding: 20px 0 0;
+  border-top: 1px solid #f2903b;
+}
+
+input {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #000;
+  border: 1px solid transparent;
+}
+
+label:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+
+label:hover {
+  color: #888;
+  cursor: pointer;
+}
+
+input:checked + label {
+  color: #f2903b;
+  /*border: 1px solid #ddd;
+  border-top: 2px solid orange;*/
+  border-bottom: 3px solid #f2903b;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5,
+#tab6:checked ~ #content6,
+#tab7:checked ~ #content7,
+#tab8:checked ~ #content8,
+#tab9:checked ~ #content9,
+#tab10:checked ~ #content10 {
+  display: block;
+}
+
+@media screen and (max-width: 650px) {
+  label {
+    font-size: 0;
+  }
+  label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  label {
+    padding: 15px;
+  }
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+}
+[hidden] {
+  display: none;
+}
+/* =============================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Force vertical scrollbar in non-IE
+ * 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.services {
+  padding: 150px 0px 0 0px;
+  margin-left: 8%;
+}
+
+.services span{
+  width: 45%;
+  display: inline-block;
+  min-height: 350px;
+  max-height: 350px;
+  padding: 70px 110px 100px 90px;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  color: #fff;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.71);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.71);
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.71);
+}
+
+.services span p{
+	max-width: 400px;
+	font-size: 14px
+  
+}
+
+.services span:hover {
+	cursor: pointer
+
+}
+
+.services span h1{
+	position: relative;
+	z-index: 1;
+}
+
+span.banking {
+  background: url(http://noomedia.co.za/curvegroup/images/banking.jpg);
+
+}
+
+span.flex {
+  background: url(http://noomedia.co.za/curvegroup/images/flex.jpg);
+
+}
+
+span.technology {
+  background: url(http://noomedia.co.za/curvegroup/images/technology.jpg);
+
+}
+
+span.systems {
+  background: url(http://noomedia.co.za/curvegroup/images/systems.jpg);
+
+}
+
+span.banking:hover {
+  background: url(http://noomedia.co.za/curvegroup/images/banking-l.jpg);
+
+}
+
+span.flex:hover {
+  background: url(http://noomedia.co.za/curvegroup/images/flex-l.jpg);
+
+}
+
+span.technology:hover {
+  background: url(http://noomedia.co.za/curvegroup/images/technology-l.jpg);
+
+}
+
+span.systems:hover {
+  background: url(http://noomedia.co.za/curvegroup/images/systems-l.jpg);
+
+}
+
+span.flex h1, span.technology h1{
+  text-align: right
+
+
+}
+
+
+span.banking p, span.systems p{
+  margin-left: 50px
+
+
+}
+
+span.banking p, span.flex p, span.systems h1, span.technology h1{
+	margin-top: 50px
+
+}
+/*span.banking h1:before{
+	content: "";
+	position: absolute;
+	background: url(http://noomedia.co.za/curvegroup/images/sqaure.svg);
+	width: 120px;
+	height: 120px;
+	background-repeat: no-repeat;
+	z-index: -1;
+	margin-top: -20px;
+	margin-left: -30px	
+}
+
+span.flex h1:before{
+	content: "";
+	position: absolute;
+	background: url(http://noomedia.co.za/curvegroup/images/triangle.svg);
+	width: 120px;
+	height: 120px;
+	background-repeat: no-repeat;
+	z-index: -1;
+	margin-top: -20px;
+	margin-left: 40px	
+}
+
+span.systems h1:before{
+	content: "";
+	position: absolute;
+	background: url(http://noomedia.co.za/curvegroup/images/circle.svg);
+	width: 120px;
+	height: 120px;
+	background-repeat: no-repeat;
+	z-index: -1;
+	margin-top: -20px;
+	margin-left: -45px	
+}
+
+span.technology h1:before{
+	content: "";
+	position: absolute;
+	background: url(http://noomedia.co.za/curvegroup/images/pentagon.svg);
+	width: 120px;
+	height: 120px;
+	background-repeat: no-repeat;
+	z-index: -1;
+	margin-top: -20px;
+	margin-left: 230px	
+}*/
+
+
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+   /*background: url(http://noomedia.co.za/curvegroup/images/oval.svg);*/
+   background-size: 120%;
+  width: 100%;
+  background-position: center -200px;
+  height: 500px;
+  background-repeat: no-repeat
+}
+
+
+input[type=button],
+input[type=submit],
+input[type=text],
+input[type=search],
+input[type=password],
+select,
+button,
+textarea {
+  margin: 0;
+  cursor: pointer;
+  outline: none;
+  vertical-align: top;
+}
+input[type=submit] {
+  border: none 0;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+}
+input[type=radio],
+input[type=checkbox] {
+  margin: 0;
+  padding: 0;
+}
+input[type=text],
+input[type=search],
+select,
+textarea {
+  cursor: default;
+}
+button {
+  border: none 0;
+}
+*:first-child + html input.button {
+  overflow: visible;
+  /* remove padding from left/right */
+  width: auto !important;
+}
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+ */
+::selection {
+  color: #fff;
+  background-color: #328efd;
+}
+::-moz-selection {
+  color: #fff;
+  background-color: #328efd;
+}
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  outline: 0;
+  text-decoration: none;
+}
+/* =============================================================================
+   Typography
+   ========================================================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+blockquote {
+  margin: 1em 40px;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+/* =============================================================================
+   Lists
+   ========================================================================== */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+dd {
+  margin: 0 0 0 40px;
+}
+nav ul,
+nav ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * Improve image quality when scaled in IE7
+ * code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+@font-face {
+	font-family: 'ITC Avant Garde Gothic Std Book Condensed';
+	src: url('ITCAvantGardeStd-BkCn.eot');
+	src: url('ITCAvantGardeStd-BkCn.eot?#iefix') format('embedded-opentype'),
+		url('ITCAvantGardeStd-BkCn.woff') format('woff'),
+		url('ITCAvantGardeStd-BkCn.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ITC Avant Garde Gothic Std Bold Condensed';
+	src: url('ITCAvantGardeStd-BoldCn.eot');
+	src: url('ITCAvantGardeStd-BoldCn.eot?#iefix') format('embedded-opentype'),
+		url('ITCAvantGardeStd-BoldCn.woff') format('woff'),
+		url('ITCAvantGardeStd-BoldCn.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ITC Avant Garde Gothic Std';
+	src: url('ITCAvantGardeStd-MdCnObl.eot');
+	src: url('ITCAvantGardeStd-MdCnObl.eot?#iefix') format('embedded-opentype'),
+		url('ITCAvantGardeStd-MdCnObl.woff') format('woff'),
+		url('ITCAvantGardeStd-MdCnObl.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'ITC Avant Garde Gothic Std';
+	src: url('ITCAvantGardeStd-BkObl.eot');
+	src: url('ITCAvantGardeStd-BkObl.eot?#iefix') format('embedded-opentype'),
+		url('ITCAvantGardeStd-BkObl.woff') format('woff'),
+		url('ITCAvantGardeStd-BkObl.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'ITC Avant Garde Gothic Std Demi Condensed';
+	src: url('ITCAvantGardeStd-DemiCn.eot');
+	src: url('ITCAvantGardeStd-DemiCn.eot?#iefix') format('embedded-opentype'),
+		url('ITCAvantGardeStd-DemiCn.woff') format('woff'),
+		url('ITCAvantGardeStd-DemiCn.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ITC Avant Garde Gothic Std';
+	src: url('ITCAvantGardeStd-MdObl.eot');
+	src: url('ITCAvantGardeStd-MdObl.eot?#iefix') format('embedded-opentype'),
+		url('ITCAvantGardeStd-MdObl.woff') format('woff'),
+		url('ITCAvantGardeStd-MdObl.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'ITC Avant Garde Gothic Std';
+	src: url('ITCAvantGardeStd-Bold.eot');
+	src: url('ITCAvantGardeStd-Bold.eot?#iefix') format('embedded-opentype'),
+		url('ITCAvantGardeStd-Bold.woff') format('woff'),
+		url('ITCAvantGardeStd-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ITC Avant Garde Gothic Std';
+	src: url('ITCAvantGardeStd-DemiObl.eot');
+	src: url('ITCAvantGardeStd-DemiObl.eot?#iefix') format('embedded-opentype'),
+		url('ITCAvantGardeStd-DemiObl.woff') format('woff'),
+		url('ITCAvantGardeStd-DemiObl.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'ITC Avant Garde Gothic Std';
+	src: url('ITCAvantGardeStd-XLtCnObl.eot');
+	src: url('ITCAvantGardeStd-XLtCnObl.eot?#iefix') format('embedded-opentype'),
+		url('ITCAvantGardeStd-XLtCnObl.woff') format('woff'),
+		url('ITCAvantGardeStd-XLtCnObl.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'ITC Avant Garde Gothic Std';
+	src: url('ITCAvantGardeStd-BoldCnObl.eot');
+	src: url('ITCAvantGardeStd-BoldCnObl.eot?#iefix') format('embedded-opentype'),
+		url('ITCAvantGardeStd-BoldCnObl.woff') format('woff'),
+		url('ITCAvantGardeStd-BoldCnObl.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'ITC Avant Garde Gothic Std';
+	src: url('ITCAvantGardeStd-DemiCnObl.eot');
+	src: url('ITCAvantGardeStd-DemiCnObl.eot?#iefix') format('embedded-opentype'),
+		url('ITCAvantGardeStd-DemiCnObl.woff') format('woff'),
+		url('ITCAvantGardeStd-DemiCnObl.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'ITC Avant Garde Gothic Std Book';
+	src: url('ITCAvantGardeStd-Bk.eot');
+	src: url('ITCAvantGardeStd-Bk.eot?#iefix') format('embedded-opentype'),
+		url('ITCAvantGardeStd-Bk.woff') format('woff'),
+		url('ITCAvantGardeStd-Bk.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ITC Avant Garde Gothic Std';
+	src: url('ITCAvantGardeStd-BoldObl.eot');
+	src: url('ITCAvantGardeStd-BoldObl.eot?#iefix') format('embedded-opentype'),
+		url('ITCAvantGardeStd-BoldObl.woff') format('woff'),
+		url('ITCAvantGardeStd-BoldObl.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'ITC Avant Garde Gothic Std Extra Light Condensed';
+	src: url('ITCAvantGardeStd-XLtCn.eot');
+	src: url('ITCAvantGardeStd-XLtCn.eot?#iefix') format('embedded-opentype'),
+		url('ITCAvantGardeStd-XLtCn.woff') format('woff'),
+		url('ITCAvantGardeStd-XLtCn.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ITC Avant Garde Gothic Std';
+	src: url('ITCAvantGardeStd-BkCnObl.eot');
+	src: url('ITCAvantGardeStd-BkCnObl.eot?#iefix') format('embedded-opentype'),
+		url('ITCAvantGardeStd-BkCnObl.woff') format('woff'),
+		url('ITCAvantGardeStd-BkCnObl.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'ITC Avant Garde Gothic Std Extra';
+	src: url('ITCAvantGardeStd-XLt.eot');
+	src: url('ITCAvantGardeStd-XLt.eot?#iefix') format('embedded-opentype'),
+		url('ITCAvantGardeStd-XLt.woff') format('woff'),
+		url('ITCAvantGardeStd-XLt.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ITC Avant Garde Gothic Std';
+	src: url('ITCAvantGardeStd-XLtObl.eot');
+	src: url('ITCAvantGardeStd-XLtObl.eot?#iefix') format('embedded-opentype'),
+		url('ITCAvantGardeStd-XLtObl.woff') format('woff'),
+		url('ITCAvantGardeStd-XLtObl.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'ITC Avant Garde Gothic Std Demi';
+	src: url('ITCAvantGardeStd-Demi.eot');
+	src: url('ITCAvantGardeStd-Demi.eot?#iefix') format('embedded-opentype'),
+		url('ITCAvantGardeStd-Demi.woff') format('woff'),
+		url('ITCAvantGardeStd-Demi.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ITC Avant Garde Gothic Std';
+	src: url('ITCAvantGardeStd-Md.eot');
+	src: url('ITCAvantGardeStd-Md.eot?#iefix') format('embedded-opentype'),
+		url('ITCAvantGardeStd-Md.woff') format('woff'),
+		url('ITCAvantGardeStd-Md.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+img#logo {
+  position: absolute;
+  width: 250px;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 30px
+}
+img#logo:hover {
+	pointer-events: none
+
+}
+/*
+ * Correct overflow displayed oddly in IE9
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* =============================================================================
+   Figures
+   ========================================================================== */
+figure {
+  margin: 0;
+}
+/* =============================================================================
+   Forms
+   ========================================================================== */
+form {
+  margin: 0;
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+/* Indicate that 'label' will shift focus to the associated form element */
+label {
+  cursor: pointer;
+}
+/*
+ * 1. Correct color not inheriting in IE6/7/8/9
+ * 2. Correct alignment displayed oddly in IE6/7
+ */
+legend {
+  border: 0;
+  *margin-left: -7px;
+  padding: 0;
+}
+/*
+ * 1. Correct font-size not inheriting in all browsers
+ * 2. Remove margins in FF3/4 S5 Chrome
+ * 3. Define consistent vertical alignment display in all browsers
+ */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+/* Select styling in Firefox */
+@-moz-document url-prefix() {
+  select {
+    padding: 0.8em 0.75em;
+  }
+}
+/*
+ * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+ */
+button,
+input {
+  line-height: normal;
+}
+*:first-child + html input.button {
+  overflow: visible;
+  /* remove padding from left/right */
+  width: auto !important;
+}
+/*
+ * 1. Display hand cursor for clickable form elements
+ * 2. Allow styling of clickable form elements in iOS
+ * 3. Correct inner spacing displayed oddly in IE7 (doesn't effect IE6)
+ */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  *overflow: visible;
+}
+input[type=submit] {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+}
+/*
+ * Consistent box sizing and appearance
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  margin: 0;
+  padding: 0;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/*
+ * Remove inner padding and border in FF3/4: h5bp.com/l
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/*
+ * 1. Remove default vertical scrollbar in IE6/7/8/9
+ * 2. Allow only vertical resizing
+ */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+/* Colors for form validity */
+input:invalid,
+textarea:invalid {
+  background-color: #f0dddd;
+}
+/* =============================================================================
+   Tables
+   ========================================================================== */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* =============================================================================
+   Non-semantic helper classes
+   Please define your styles before this section.
+   ========================================================================== */
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible {
+  visibility: hidden;
+}
+/* Contain floats: h5bp.com/q */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+/* #Typography Variables
+================================================== */
+/* #Colour Variables
+================================================== */
+a {
+  text-decoration: none;
+}
+h1 {
+  font-size: 3.5em;
+  line-height: 1.25;
+  font-weight: 300;
+}
+h1:hover{
+    color: #fff;
+}
+/* =============================================================================
+   Layout
+   ========================================================================== */
+body {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-family: 'ITC Avant Garde Gothic Std';
+  color: #333333;
+  line-height: 1.6;
+  font-weight: normal;
+  /* background-color: #e2e0e3; */
+}
+.container {
+  position: relative;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.container.toggled {
+  -webkit-filter: blur(8px);
+  -moz-filter: blur(8px);
+  -o-filter: blur(8px);
+  -ms-filter: blur(8px);
+  filter: blur(8px);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+div.screen {
+  margin: 0 auto;
+  height: 100vh;
+    background-color: #dedede;
+}
+div.screen nav.main-nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  padding: 2em;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  -webkit-transform: scale(0.85);
+  -ms-transform: scale(0.85);
+  transform: scale(0.85);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+div.screen nav.main-nav.toggled {
+  display: block;
+  z-index: 10;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background: rgba(0,0,0,.6)
+}
+div.screen nav.main-nav ul {
+  padding: 2em 0 0 0;
+}
+div.screen nav.main-nav ul li {
+  border-bottom: 1px solid rgb(255, 152, 0);
+  text-align: center
+}
+div.screen nav.main-nav ul li a {
+  font-size: 1.250em;
+  color: #fff;
+  padding: 1em 0;
+  font-weight: 300;
+  display: block;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+div.screen nav.main-nav ul li a:last-child {
+  border: none;
+}
+div.screen nav.main-nav ul li a:hover {
+  -webkit-opacity: 0.45;
+  -moz-opacity: 0.45;
+  opacity: 0.45;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  padding: 1em;
+}
+div.screen header {
+  position: absolute;
+  top: 0;
+  z-index: 15;
+}
+div.screen header a.target-burger {
+  margin: 1.125em;
+  width: 3.250em;
+  height: 3.250em;
+  position: absolute;
+  display: block;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+ 
+}
+div.screen header a.target-burger:hover {
+  cursor: pointer;
+  -webkit-opacity: 0.45;
+  -moz-opacity: 0.45;
+  opacity: 0.45;
+}
+div.screen header a.target-burger.toggled ul.buns li.bun {
+  -webkit-transform: rotate(45deg) translateZ(0);
+  transform: rotate(45deg) translateZ(0);
+}
+div.screen header a.target-burger.toggled ul.buns li.bun:last-child {
+  -webkit-transform: rotate(-45deg) translateZ(0);
+  transform: rotate(-45deg) translateZ(0);
+}
+div.screen header a.target-burger ul.buns {
+  width: 1.625em;
+  height: 1.625em;
+  list-style: none;
+  margin: -0.8125em 0 0 -0.8125em;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.23, 1, 0.32, 1), color 1s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1), color 1s cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  color: #fff;
+}
+div.screen header a.target-burger ul.buns li.bun {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.75px;
+  -webkit-transform: translateY(-3.75px) translateZ(0);
+  transform: translateY(-3.75px) translateZ(0);
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.23, 1, 0.32, 1), background-color 1s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1), background-color 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+div.screen header a.target-burger ul.buns li.bun:last-child {
+  -webkit-transform: translateY(3.75px) translateZ(0);
+  transform: translateY(3.75px) translateZ(0);
+}
+div.screen div.app-content {
+  width: 100%;
+
+
+
+
+}
+div.screen div.app-content ul.content-list li article figure {
+  position: relative;
+}
+div.screen div.app-content ul.content-list li article figure:before {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+div.screen div.app-content ul.content-list li article figure img {
+  width: 100%;
+  line-height: 1;
+  display: block;
+}
+div.screen div.app-content ul.content-list li article figure figcaption {
+  color: #fff;
+  position: absolute;
+  z-index: 5;
+  bottom: 0;
+  padding: 2em 2em 2.5em 2em;
+}
+div.screen div.app-content ul.content-list li article figure figcaption h1,
+div.screen div.app-content ul.content-list li article figure figcaption span {
+  -webkit-text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  -moz-text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+div.screen div.app-content ul.content-list li article figure figcaption h1 {
+  padding: 0 0 0.25em 0 ;
+  margin: 0 0 0.25em 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+div.screen div.app-content ul.content-list li article figure figcaption span {
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+}
+div.screen div.app-content ul.content-list li article figure figcaption span.category {
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  padding: 0 0 0.3em;
+  color: rgba(255, 255, 255, 0.7);
+}
+div.screen div.app-content ul.content-list li article figure figcaption span.price {
+  font-size: 1.3em;
+  float: right;
+}
+/* =============================================================================
+   Mixins & Functions
+   ========================================================================== */
+.inline-block {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+@media (max-width: 1750px) {
+	.services {
+    padding: 200px 100px 0 100px;
+
+	}
+
+	body {
+		background-position: center -100px
+	}  
+}
+
+@media (max-width: 1500px) {
+	.services {
+    padding: 200px 0 0 0;
+
+	}
+}
+
+@media (max-width: 1340px) {
+	.services span {
+		    padding: 60px;
+
+	}
+
+	body {
+		background-position: center -65px	    
+
+	}
+}
+
+@media (max-width: 1010px) {	
+		.services span p {
+    max-width: 450px;
+		}
+
+		span.banking p, span.systems p {
+			margin-left: 0
+		}
+.services span {
+		    padding: 60px;
+		   margin-right: 10px;
+    	margin-bottom: 15px; 
+    	width: 48%;
+}
+
+.services {
+	margin-left: 2%;
+
+	}
+}
+
+@media (max-width: 850px) {
+	body {
+		background-size: 200%
+	}
+
+	.services span {
+    width: 98%;
+    padding: 50px 100px
+
+	}
+}
+	@media (max-width: 550px) {
+	body {    
+
+	background-size: 350%
+	}
+}
+	@media (max-width: 500px) {
+		.services span {
+    padding: 60px;
+  
+
+}
+}
+	@media (max-width: 450px) {  
+	img#logo {
+		width: 200px  
+	}
+
+	.services {
+    padding: 150px 0 0 0;
+
+	}
+
+	.services span {
+    padding: 25px;    
+    overflow: hidden
+	}
+
+	span.flex h1, span.technology h1 {
+		text-align: left
+	}
+        
+        .contact {
+  padding: 25px 0 450px 0;
+  background: url(http://cdn.desktopwallpapers4.me/wallpapers/world/1366x768/1/4916-blurred-city-street-1366x768-world-wallpaper.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.contact i {
+  padding: 0 20px;
+  font-size: 0.8em;
+}
+
+.contact h2 {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 2.5em;
+  border: 1px solid #555;
+  background-color: rgba(0,0,0,0.6);
+  padding-top: 20px;
+  height: 75px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 40px;
+  padding-left: 50px;
+  text-align: center;
+    
+}
+
+#comments {
+  margin-top: 0;
+}
+
+#contactform {
+  height: 215px;
+}
+
+#contactform .right {
+  float: right;
+}
+
+#contactform input,
+#contactform textarea {
+  margin-bottom: 14px;
+  width: 100%;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+}
+
+#contactform input {
+  padding-left: 15px;
+  height: 44px;
+  border-radius: 0;
+}
+
+#contactform textarea {
+  padding: 15px;
+  height: 218px;
+  border-radius: 0;
+}
+
+#contactform .btn {
+  width: 100%;
+  height: 50px;
+  border-radius: 0;
+  border: 1px solid #333;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+}
+
+#contactform .btn:hover {
+  background: rgba(247, 130, 29, 0.75);
+}
+
+#map-canvas {
+  width: 100%;
+  height: 135px;
+  margin-bottom: 15px;
+  border: 2px solid #fff;
+}
+        
+.contact {
+  padding: 25px 0 450px 0;
+  background: url(http://cdn.desktopwallpapers4.me/wallpapers/world/1366x768/1/4916-blurred-city-street-1366x768-world-wallpaper.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.contact i {
+  padding: 0 20px;
+  font-size: 0.8em;
+}
+
+.contact h2 {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 2.5em;
+  border: 1px solid #555;
+  background-color: rgba(0,0,0,0.6);
+  padding-top: 20px;
+  height: 75px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 40px;
+  padding-left: 50px;
+  text-align: center;
+    
+}
+
+#comments {
+  margin-top: 0;
+}
+
+#contactform {
+  height: 215px;
+}
+
+#contactform .right {
+  float: right;
+}
+
+#contactform input,
+#contactform textarea {
+  margin-bottom: 14px;
+  width: 100%;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+}
+
+#contactform input {
+  padding-left: 15px;
+  height: 44px;
+  border-radius: 0;
+}
+
+#contactform textarea {
+  padding: 15px;
+  height: 218px;
+  border-radius: 0;
+}
+
+#contactform .btn {
+  width: 100%;
+  height: 50px;
+  border-radius: 0;
+  border: 1px solid #333;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+}
+
+#contactform .btn:hover {
+  background: rgba(247, 130, 29, 0.75);
+}
+
+#map-canvas {
+  width: 100%;
+  height: 135px;
+  margin-bottom: 15px;
+  border: 2px solid #fff;
+}
+        
+        .contact {
+  padding: 25px 0 450px 0;
+  background: url(http://cdn.desktopwallpapers4.me/wallpapers/world/1366x768/1/4916-blurred-city-street-1366x768-world-wallpaper.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.contact i {
+  padding: 0 20px;
+  font-size: 0.8em;
+}
+
+.contact h2 {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 2.5em;
+  border: 1px solid #555;
+  background-color: rgba(0,0,0,0.6);
+  padding-top: 20px;
+  height: 75px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 40px;
+  padding-left: 50px;
+  text-align: center;
+    
+}
+
+#comments {
+  margin-top: 0;
+}
+
+#contactform {
+  height: 215px;
+}
+
+#contactform .right {
+  float: right;
+}
+
+#contactform input,
+#contactform textarea {
+  margin-bottom: 14px;
+  width: 100%;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+}
+
+#contactform input {
+  padding-left: 15px;
+  height: 44px;
+  border-radius: 0;
+}
+
+#contactform textarea {
+  padding: 15px;
+  height: 218px;
+  border-radius: 0;
+}
+
+#contactform .btn {
+  width: 100%;
+  height: 50px;
+  border-radius: 0;
+  border: 1px solid #333;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+}
+
+#contactform .btn:hover {
+  background: rgba(247, 130, 29, 0.75);
+}
+
+#map-canvas {
+  width: 100%;
+  height: 135px;
+  margin-bottom: 15px;
+  border: 2px solid #fff;
+}
+        
+        .contact {
+  padding: 25px 0 450px 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.contact i {
+  padding: 0 20px;
+  font-size: 0.8em;
+}
+
+.contact h2 {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 2.5em;
+  border: 1px solid #555;
+  background-color: rgba(0,0,0,0.6);
+  padding-top: 20px;
+  height: 75px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 40px;
+  padding-left: 50px;
+  text-align: center;
+    
+}
+
+#comments {
+  margin-top: 0;
+}
+
+#contactform {
+  height: 215px;
+}
+
+#contactform .right {
+  float: right;
+}
+
+#contactform input,
+#contactform textarea {
+  margin-bottom: 14px;
+  width: 100%;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+}
+
+#contactform input {
+  padding-left: 15px;
+  height: 44px;
+  border-radius: 0;
+}
+
+#contactform textarea {
+  padding: 15px;
+  height: 218px;
+  border-radius: 0;
+}
+
+#contactform .btn {
+  width: 100%;
+  height: 50px;
+  border-radius: 0;
+  border: 1px solid #333;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+}
+
+#contactform .btn:hover {
+  background: rgba(247, 130, 29, 0.75);
+}
+
+#map-canvas {
+  width: 100%;
+  height: 135px;
+  margin-bottom: 15px;
+  border: 2px solid #fff;
+}
